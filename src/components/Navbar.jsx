@@ -1,0 +1,46 @@
+
+import { Link } from "react-router-dom"
+import { AiOutlineInstagram } from "react-icons/ai"
+import { AiOutlineYoutube } from "react-icons/ai"
+import { AiOutlineFacebook } from "react-icons/ai"
+import { MdClose, MdMenu } from "react-icons/md"
+import { useState } from "react"
+
+
+export default function Navbar(){
+
+    const [menu, setMenu] = useState(false)
+
+    const toggleBtn = () => {
+        setMenu((currentState) => (!currentState));
+    }
+
+    return(
+        <div className="flex justify-between items-center p-2 ">
+            <h1>Savor</h1>
+            <ul className={`absolute flex flex-col right-5 top-10 gap-1 sm:flex sm:static sm:flex-row font-semibold capitalize text-sm ${menu ? "flex" : "hidden" } `}>
+                <li>
+                    <Link to="/home">home</Link>
+                </li>
+                <li>
+                    <Link to="/about">about</Link>
+                </li>
+                <li>
+                    <Link to="/reviews">reviews</Link>
+                </li>
+                <li>
+                    <Link to="/contact">contact</Link>
+                </li>
+            </ul>
+            <div className="flex items-center gap-2 ">
+                <button className="text-blue-600 rounded-full p-1 " > <AiOutlineFacebook /> </button>
+                <button className="text-blue-600 rounded-full p-1 " > <AiOutlineInstagram /> </button>
+                <button className="text-blue-600 rounded-full p-1 " > <AiOutlineYoutube /> </button>
+                <button className="border-blue-500 p-1 ">lets talk</button>
+            </div>
+            <button onClick={toggleBtn} className="cursor-pointer border-none text-3xl flex sm:hidden">
+                {menu ? <MdClose /> : <MdMenu /> }
+            </button>
+        </div>
+    )
+}
