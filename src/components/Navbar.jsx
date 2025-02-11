@@ -20,7 +20,7 @@ export default function Navbar(){
             <h3>Savor</h3>
             <ul className={`absolute flex flex-col right-5 top-14 bg-white p-2 rounded-md gap-2 text-3xl font-semibold capitalize sm:flex sm:static sm:flex-row sm:text-sm ${menu ? "flex" : "hidden" } `}>
                 <li>
-                    <Link to="/home">home</Link>
+                    <Link to="/">home</Link>
                 </li>
                 <li>
                     <Link to="/about">about</Link>

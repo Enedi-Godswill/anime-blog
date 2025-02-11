@@ -1,6 +1,9 @@
+import Navbar from "./Navbar";
 
 export default function Signup(){
     return(
-        <div></div>
+        <div>
+            <Navbar />
+        </div>
     )
 }
