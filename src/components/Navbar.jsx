@@ -16,8 +16,8 @@ export default function Navbar(){
     }
 
     return(
-        <div className="fixed bg-white border-b-2 top-0 left-0 w-full flex justify-between items-center p-2 ">
-            <h1>Savor</h1>
+        <div className="fixed bg-white border-b-2 top-0 left-0 w-full flex justify-between items-center text-black p-2 ">
+            <h3>Savor</h3>
             <ul className={`absolute flex flex-col right-5 top-14 bg-white p-2 rounded-md gap-2 text-3xl font-semibold capitalize sm:flex sm:static sm:flex-row sm:text-sm ${menu ? "flex" : "hidden" } `}>
                 <li>
                     <Link to="/home">home</Link>

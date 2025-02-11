@@ -8,18 +8,18 @@ export const ReviewData = [
         id:1,
         name:"rice and stew",
         imgUrl:review1,
-        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sunt, ipsa officiis ad dolore tenetur facilis mollitia aliquid animi eum pariatur, ut dolor dolores veniam? Libero assumenda doloribus similique quam illum. Dolore fugit omnis quidem!"
+        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestias."
     },
     {
         id:2,
         name:"afabg soup",
         imgUrl:review2,
-        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sunt, ipsa officiis ad dolore tenetur facilis mollitia aliquid animi eum pariatur, ut dolor dolores veniam? Libero assumenda doloribus similique quam illum. Dolore fugit omnis quidem!"
+        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestias."
     },
     {
         id:3,
         name:"pepper canda",
         imgUrl:review3,
-        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sunt, ipsa officiis ad dolore tenetur facilis mollitia aliquid animi eum pariatur, ut dolor dolores veniam? Libero assumenda doloribus similique quam illum. Dolore fugit omnis quidem!"
+        info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestias."
     }
 ]

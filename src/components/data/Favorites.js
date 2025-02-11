@@ -1,37 +1,46 @@
 
-
-import food7 from "../assets/food7.jpg"
-import food8 from "../assets/food8.jpg"
+import food1 from "../assets/food3.jpg"
+import food2 from "../assets/food4.jpg"
+import food3 from "../assets/food5.jpg"
+import food4 from "../assets/food6.jpg"
+import food5 from "../assets/food7.jpg"
+import food6 from "../assets/food8.jpg"
 
 export const Favourites = [
     {
         id:1,
         name:"foodie",
-        info:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis nostrum possimus omnis, mollitia rerum itaque culpa aperiam minus repudiandae, qui voluptatibus!"
+        imgUrl:food1,
+        info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rerum."
     },
     {
         id:2,
         name:"foodie",
-        info:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis nostrum possimus omnis, mollitia rerum itaque culpa aperiam minus repudiandae, qui voluptatibus!"
+        imgUrl:food2,
+        info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rerum."
     },
     {
         id:3,
         name:"foodie",
-        info:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis nostrum possimus omnis, mollitia rerum itaque culpa aperiam minus repudiandae, qui voluptatibus!"
+        imgUrl:food3,
+        info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rerum."
     },
     {
-        id:1,
+        id:4,
         name:"foodie",
-        info:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis nostrum possimus omnis, mollitia rerum itaque culpa aperiam minus repudiandae, qui voluptatibus!"
+        imgUrl:food4,
+        info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rerum."
     },
     {
-        id:1,
+        id:5,
         name:"foodie",
-        info:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis nostrum possimus omnis, mollitia rerum itaque culpa aperiam minus repudiandae, qui voluptatibus!"
+        imgUrl:food5,
+        info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rerum."
     },
     {
-        id:1,
+        id:6,
         name:"foodie",
-        info:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perferendis nostrum possimus omnis, mollitia rerum itaque culpa aperiam minus repudiandae, qui voluptatibus!"
-    },
+        imgUrl:food6,
+        info:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rerum."
+    }
 ]
