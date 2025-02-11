@@ -12,7 +12,7 @@ export const ReviewData = [
     },
     {
         id:2,
-        name:"afabg soup",
+        name:"afang soup",
         imgUrl:review2,
         info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestias."
     },
