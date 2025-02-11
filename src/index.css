@@ -17,6 +17,6 @@
     @apply text-sm;
   }
   button{
-    @apply border-2 border-solid capitalize;
+    @apply border-2 border-solid rounded-md p-1 capitalize;
   }
 }
