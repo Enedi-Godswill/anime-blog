@@ -10,15 +10,24 @@ import { useState } from "react"
 export default function Navbar(){
 
     const [menu, setMenu] = useState(false)
+    const [menuBorder, setMenuBorder] = useState(false);
 
     const toggleBtn = () => {
         setMenu((currentState) => (!currentState));
     }
 
+    window.addEventListener("resize", () => {
+        if(window.screenY >= 15 ){
+            console.log("passed 15")
+        } else {
+            console.log("keep going")
+        }
+    })
+
     return(
-        <div className="flex justify-between items-center p-2 ">
+        <div className="fixed top-0 left-0 w-full flex justify-between items-center p-2 ">
             <h1>Savor</h1>
-            <ul className={`absolute flex flex-col right-5 top-10 gap-1 sm:flex sm:static sm:flex-row font-semibold capitalize text-sm ${menu ? "flex" : "hidden" } `}>
+            <ul className={`absolute flex flex-col right-5 top-14 bg-white p-2 rounded-md gap-2 text-3xl font-semibold capitalize sm:flex sm:static sm:flex-row sm:text-sm ${menu ? "flex" : "hidden" } `}>
                 <li>
                     <Link to="/home">home</Link>
                 </li>
