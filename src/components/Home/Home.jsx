@@ -1,5 +1,6 @@
 
-import img1 from "../assets/one-punch.jpg"
+import img1 from "../assets/food8.jpg"
+import { Link } from "react-router-dom"
 
 export default function Home(){
     return(
@@ -9,10 +10,16 @@ export default function Home(){
                     <hr className="border-2 rounded-xs w-[4rem] " />
                     <p>welcome</p>
                 </div>
-                <h1>I am Enedi Godswill</h1>
-                <h3>Anime Lover and Programmer </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi cupiditate ab asperiores. Dolorum eum perspiciatis, dolor enim laudantium consequatur ab quam?</p>
-                <button className="w-30 rounded-md p-1 ">learn more</button>
+                <h1>Spicy delicious afang soup</h1>
+                <p>Food gives you an experience, one that satiates your hearts desire. Join me as i journey to find out the story behind the foood you love.</p>
+                <div className="flex items-center gap-3 ">
+                    <button className="w-30 rounded-md p-1 bg-blue-600 text-white hover:text-black hover:bg-white hover:border-blue-600 transition-all ">
+                    <Link to="/recipes">View recipes</Link>
+                    </button>
+                    <button className="w-30 rounded-md p-1 hover:bg-blue-600 hover:text-white transition-all ">
+                    <Link to="/about">learn more</Link>
+                    </button>
+                </div>
             </div>
             <div className="w-[40%] sm:w-[70%] md:w-[50%] lg:w-[40%] ">
                 <img src={img1} className="rounded-md md:w-[90%] lg:w-[70%] " alt="" />

@@ -1,10 +1,8 @@
 
 import { Link } from "react-router-dom"
-import { AiOutlineInstagram } from "react-icons/ai"
-import { AiOutlineYoutube } from "react-icons/ai"
 import { AiOutlineFacebook } from "react-icons/ai"
 import { MdClose, MdMenu } from "react-icons/md"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 export default function Navbar(){
@@ -15,10 +13,20 @@ export default function Navbar(){
         setMenu((currentState) => (!currentState));
     }
 
+    const [menuBorder, setMenuBorder] = useState(false);
+
+    window.addEventListener("scroll", () => {
+        if(window.scrollY >= 30){
+            setMenuBorder(true);
+        } else {
+            setMenuBorder(false);
+        }
+    })
+
     return(
-        <div className="fixed bg-white border-b-2 top-0 left-0 w-full flex justify-between items-center text-black p-2 ">
+        <div className={`fixed bg-white top-0 left-0 w-full flex justify-between items-center p-2 ${menuBorder ? "border-b-2 border-b-gray-700 " : "border-0" } `}>
             <h3>Savor</h3>
-            <ul className={`absolute flex flex-col right-5 top-14 bg-white p-2 rounded-md gap-2 text-3xl font-semibold capitalize sm:flex sm:static sm:flex-row sm:text-sm ${menu ? "flex" : "hidden" } `}>
+            <ul className={`absolute flex flex-col top-14 w-full p-2 rounded-md gap-2 text-xl font-semibold capitalize sm:flex sm:flex-row sm:static sm:text-sm ${menu ? "flex" : "hidden" } `}>
                 <li>
                     <Link to="/">home</Link>
                 </li>
@@ -26,17 +34,17 @@ export default function Navbar(){
                     <Link to="/about">about</Link>
                 </li>
                 <li>
-                    <Link to="/reviews">reviews</Link>
+                    <Link to="/recipes">recipes</Link>
                 </li>
                 <li>
                     <Link to="/contact">contact</Link>
                 </li>
             </ul>
-            <div className="flex items-center gap-2 ">
-                <button className="text-blue-600 rounded-full p-1 " > <AiOutlineFacebook /> </button>
-                <button className="text-blue-600 rounded-full p-1 " > <AiOutlineInstagram /> </button>
-                <button className="text-blue-600 rounded-full p-1 " > <AiOutlineYoutube /> </button>
-                <button className="border-blue-500 p-1 ">lets talk</button>
+            <div className="flex justify-center items-center gap-2 ">
+                <button className="text-black rounded-full p-1 " > <AiOutlineFacebook /> </button>
+                <button className="border-black text-black p-1 w-[5rem] ">
+                    <Link to="/contact">lets talk</Link>
+                </button>
             </div>
             <button onClick={toggleBtn} className="cursor-pointer border-none text-3xl flex sm:hidden">
                 {menu ? <MdClose /> : <MdMenu /> }
