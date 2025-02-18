@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom"
 import { AiOutlineFacebook } from "react-icons/ai"
 import { MdClose, MdMenu } from "react-icons/md"
-import { MdDarkMode, MdLightMode } from "react-icons/md"
 import { useState } from "react"
 
 
@@ -12,12 +11,6 @@ export default function Navbar(){
     
     const toggleBtn = () => {
         setMenu((currentState) => (!currentState));
-    }
-
-    const [bgChange, setBgChange] = useState(false);
-    
-    const toggleBg = () => {
-        setBgChange((currentState) => (!currentState));
     }
     
     const [menuBorder, setMenuBorder] = useState(false);
@@ -56,9 +49,6 @@ export default function Navbar(){
             <div className="flex items-center ">
                 <button onClick={toggleBtn} className="transition-all cursor-pointer border-none text-3xl flex sm:hidden">
                     {menu ? <MdClose /> : <MdMenu /> }
-                </button>
-                <button onClick={toggleBg} className={`transition-all cursor-pointer border-none text-3xl flex sm:hidden ${bgChange ? "" : "" } `}>
-                    {bgChange ? <MdLightMode /> : <MdDarkMode /> }
                 </button>
             </div>
         </div>
