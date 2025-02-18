@@ -2,8 +2,8 @@
 import Home from "./components/Home/Home"
 import HomeReview from "./components/Home/HomeReview"
 import Navbar from "./components/Navbar"
-import Favourites from "./components/Home/Favorites.jsx"
 import Footer from "./components/Footer.jsx"
+import { Advert } from "./components/Home/Advert.jsx"
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Navbar />
       <Home />
       <HomeReview />
-      <Favourites />
+      <Advert />
       <Footer />
     </div>
   )
